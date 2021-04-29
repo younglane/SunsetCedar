@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Sunset Cedar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    
+    <style>
+            body {background-color: skyblue;}
+            h1   {color: whitesmoke; text-align: center; font-family: 'copperplate';}
+            h2   {color: whitesmoke; text-align: center; font-family: 'copperplate';}
+            h3   {color: whitesmoke; text-align: center; font-family: 'copperplate';}
+            p    {color: red;}
+             * {box-sizing:border-box}
+
+            * {box-sizing:border-box}
+    </style>
+    
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.html" >Sunset Cedar</a>
+      
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href={{url_for('home')}}>Home</a></li>
+      <li><a href={{url_for('about')}}>About the band</a></li>
+      <li><a href={{url_for('shows')}}>Upcoming shows</a></li>
+        <li><a href={{ url_for('connecting')}}>Connect</a></li>
+    </ul>
+     
+  <img src="static/img/brand.png"
+           height = '50'
+           width = '50'
+           align = 'right'>
+  </div>
+
+</nav>
+
+<h1>Sunset Cedar</h1>
+<h2>
+    A rock band based in Raleigh, NC. Playing groovy songs to get people dancing and vibing together. They are a very diverse band playing all types of music.
+</h2>
+<h3>
+    Mike and Austin shredding the axe! James slappin' the bass! Dave holding the rhythm together! Hoping to bring love and good vibes to people soon.
+</h3>
+<br>
+<br>
+
+ <!-- Slideshow container -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" align="center">
+    <div class="item active">
+      <img src="static/img/Home_1.png" alt="Home1">
+    </div>
+
+    <div class="item">
+       <img src="static/img/Home_2.png" alt="Home2">
+    </div>
+
+    <div class="item">
+       <img src="static/img/Home_3.png" alt="Home3">
+    </div>
+      <div class="item">
+       <img src="static/img/Home_4.png" alt="Home4">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</body>
+
+</html>

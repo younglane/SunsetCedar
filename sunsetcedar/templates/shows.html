@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Sunset Cedar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <style>
+            body {background-color: skyblue;}
+            h1   {color: blue;}
+            p    {color: red;}
+            .table {
+                background-color: lightblue;
+            }
+            .location{
+                font-family: "copperplate";
+                font-size: 20px;
+            }
+            .time{
+                font-family: 'copperplate';
+                font-size: 20px;
+            }
+            .button{
+                transition-duration: 0.4s;
+                padding: 12px 28px;
+            }
+            .button:hover {
+                background-color: #4CAF50; /* Green */
+                color: white;
+            }
+    </style>
+    
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="shows.html" >Sunset Cedar</a>
+      
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href={{url_for('home')}}>Home</a></li>
+      <li><a href={{url_for('about')}}>About the band</a></li>
+      <li class = active ><a href={{url_for('shows')}}>Upcoming shows</a></li>
+        <li><a href={{ url_for('connecting')}}>Connect</a></li>
+    </ul>
+     
+  <img src="static/img/brand.png"
+           height = '50'
+           width = '50'
+           align = 'right'>
+  </div>
+
+</nav>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Venue</th>
+      <th scope="col">Location</th>
+      <th scope="col">Date</th>
+      <th scope="col">Tickets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><img src="static/img/show1.png"></th>
+      <td class= "location" >Red Hat Amphitheater, Raleigh NC</td>
+      <td class = "time">July 4, 2021 @ 6:00PM </td>
+      <td><button class="button" onclick="window.location.href='https://ticketmaster.com';">Tickets</button></td>
+    </tr>
+   <tr>
+      <th scope="row"><img src="static/img/show2.png"></th>
+      <td class= "location" >Burning Man, Black Rock Desert, NV</td>
+      <td class = "time">August 29, 2021 @ 6:00Pm</td>
+      <td><button class="button" onclick="window.location.href='https://ticketmaster.com';">Tickets</button></td>
+    </tr>
+  </tbody>
+</table>
+</body>

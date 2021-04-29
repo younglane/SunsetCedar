@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Sunset Cedar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <style>
+            body {background-color: skyblue;}
+            h1   {color: blue;}
+            p    {color: red;}
+            .table {
+                background-color: lightblue;
+            }
+            .musician{
+                font-family: "copperplate";
+                font-size: 20px;
+            }
+            .equipment{
+                font-family: 'copperplate';
+                font-size: 20px;
+            }
+    </style>
+    
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="home.html">Sunset Cedar</a>
+      
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href={{url_for('home')}}>Home</a></li>
+      <li class = "active"><a href={{url_for('about')}}>About the band</a></li>
+      <li><a href={{url_for('shows')}}>Upcoming shows</a></li>
+        <li><a href={{ url_for('connecting')}}>Connect</a></li>
+    </ul>
+     
+  <img src="static/img/brand.png"
+           height = '50'
+           width = '50'
+           align = 'right'>
+  </div>
+  </nav>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">Musician</th>
+            <th scope="col">About</th>
+            <th scope="col">Equipment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><img src="static/img/mike.png" height="200px" width="200px" border="1px"></th>
+                <td class= "musician">Mike: lead singer & lead guitarist <br> Reincarnation of the late Jimi Hendrix. Inspired by songs today while singing through the guitar.</td>
+                <td class = "equipment">Gibson Les Paul and Marshall amplifier</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="static/img/austin.png" height="200px" width="200px" border="1px"></th>
+                <td class= "musician">Austin: guitarist & vocals <br> Originally from a metal band playing drums now to a jack of all trades when it comes to music.</td>
+                <td class = "equipment">Fender Telecaster and Fender amp</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="static/img/james.png" height="200px" width="200px" border="1px"></th>
+                <td class= "musician">James: bassist & vocals <br> From a Georgia band as the lead singer and bassist of Georgia Indie band. Now playing for Sunset Cedar</td>
+                <td class = "equipment">Fender Jazz Bass and Ampeg amp</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="static/img/dave.png" height="200px" width="200px" border="1px"></th>
+                <td class= "musician">Dave: drums & vocals <br> The glue that holds this band together. In most ways the structure of the band. His back hurts from carrying them all.</td>
+                <td class = "equipment">TAMA Drums and Sabian cymbals</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
